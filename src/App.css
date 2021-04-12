@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  height: 90px;
+  background: #fdcc04;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-size: italic;
+  padding: 0 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1.5rem;
+}
+
+.hero {
+  background: #fdcc04;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  height: 95vh;
+}
+
+.column-left {
+  margin-bottom: 1rem;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 3rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #fdcc04;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.gfx1 {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+.gfx {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gfx1 > p {
+  text-align: left;
+  color: aqua;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gfx2 {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+.gfx3 {
+  box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 0.5em red,
+    2.5em 1.5em 0 0.5em red, -3em -3em 0 0 red, 3em -3em 0 0 red,
+    -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red,
+    2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red,
+    3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red,
+    4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red,
+    -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red,
+    -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+
+.gfx4 {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-right: 100px solid transparent;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
